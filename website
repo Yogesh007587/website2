@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/kooky.css">
+    <style>
+        body {
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/butterfly.jpg');
+            font-family: 'Stoke', serif;
+
+        }
+
+        /* header */
+
+        /* left logo */
+        .left {
+            position: absolute;
+            top: 12px;
+            left: 34px;
+            /* border: 2px solid red; */
+            display: inline-block;
+        }
+
+        .left img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: x-large;
+        }
+        /* left logo */
+
+        /* navigation bar area */
+        .mid {
+            color: aqua;
+            display: block;
+            width: 50%;
+            margin: 12px auto;
+            /* border:2px solid black ; */
+        }
+        /* navigation bar area */
+
+        /* right search box */
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+
+        }
+
+        .right input {
+            font-family: 'Stoke', serif;
+            border: 2px solid white;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 150px;
+        }
+        /* right search box */
+
+        /* navigation bar */
+        .navbar {
+            display: inline-block;
+            border-radius: 30px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            padding: 2px 2px;
+            margin: 10px;
+            text-decoration: none;
+            color: aqua;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: purple;
+        }
+        /* navigation bar */
+
+        /* header */
+        .container {
+            /* border: 2px solid #5EF6E7; */
+            margin: 100px 100px;
+            padding: 80px 50px;
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        /* submit button */
+        .btn {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+        /* submit button */
+
+        /* form input section */
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+        /* form input section */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left boc for logo -->
+        <div class="left">
+            <img src="img/drip.jpg" alt="">
+            <div>DRIP</div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <input type="text" name="search" id="search" placeholder="Search this website">
+        </div>
+    </header>
+    <div class="container">
+        <form action="noaction.php">
+            <h1>Join With Us.!</h1>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
